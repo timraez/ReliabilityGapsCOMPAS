@@ -24,8 +24,4 @@ To perform perturbations and obtain interrater reliability statistics as discuss
 
 ## Results
 
-Results are saved to the folder `/results` in .csv format. Plots are saved to the folder `/figures`. Sample figures:
-
-<img src="Figures/Kappa_all features, var=5, grouped=Y, num_min=N.png" width="250">
-<img src="Figures/PABAK_all features, var=5, grouped=Y, num_min=N.png" width="250">
-<img src="Figures/ICCA_all features, var=5, grouped=Y, num_min=N.png" width="250">
+Results are saved to the folder `/results` in .csv format. Plots are saved to the folder `/figures`.
