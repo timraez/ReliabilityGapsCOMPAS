@@ -49,10 +49,10 @@ def plot_save_figure_2_metrics(metrics_probas, parameter_settings, figure_type):
     subfig.plot(metrics_probas[figure_type['group_0_metric']], color = 'blue', alpha = 0.5,   label = 'Group 0')
     subfig.plot(metrics_probas[figure_type['group_1_metric']], color = 'orange', label = 'Group 1')
     subfig.set_ylabel(figure_type['y_label'])
-    fig_label = f'{parameter_settings["feature_set"]}, var={parameter_settings["variance"]}, grouped={parameter_settings["grouped"]}, num_min={parameter_settings["num_minima"]}'
+    fig_label = f'feature set={parameter_settings["feature_set"]}, var={parameter_settings["variance"]}, grouped={parameter_settings["grouped"]}, num_min={parameter_settings["num_minima"]}'
     subfig.set_xlabel(f'noise level ({fig_label})')
     subfig.legend()
-    fig.savefig(f'figures/{tag}_{fig_label}.png', bbox_inches = "tight")
+    fig.savefig(f'figures/{tag}_feature_set={parameter_settings["feature_set"]}_var={parameter_settings["variance"]}_grouped={parameter_settings["grouped"]}_num_min={parameter_settings["num_minima"]}.png', bbox_inches = "tight") 
     
 #plot and save figure with four metrics (comparison of kappa and pabak, separately for groups)
 def plot_save_figure_corr(metrics_probas, parameter_settings, figure_type):
@@ -64,10 +64,10 @@ def plot_save_figure_corr(metrics_probas, parameter_settings, figure_type):
     subfig.plot(metrics_probas[figure_type['group_PAK']], color = 'k', linestyle = 'dashed', label='PI-corrected')
     subfig.plot(metrics_probas[figure_type['group_BAK']], color = 'k', linestyle = 'dotted',  label='BI-corrected')
     subfig.set_ylabel(figure_type['y_label'])
-    fig_label = f'{parameter_settings["feature_set"]}, var={parameter_settings["variance"]}, grouped={parameter_settings["grouped"]}, num_min={parameter_settings["num_minima"]}'
+    fig_label = f'feature set={parameter_settings["feature_set"]}, var={parameter_settings["variance"]}, grouped={parameter_settings["grouped"]}, num_min={parameter_settings["num_minima"]}'
     subfig.set_xlabel(f'noise level ({fig_label})')
     subfig.legend()
-    fig.savefig(f'figures/{tag}_{fig_label}.png', bbox_inches = "tight") 
+    fig.savefig(f'figures/{tag}_feature_set={parameter_settings["feature_set"]}_var={parameter_settings["variance"]}_grouped={parameter_settings["grouped"]}_num_min={parameter_settings["num_minima"]}.png', bbox_inches = "tight") 
 
 #plot all figures at once
 def plot_all_figures(metrics_probas, parameter_settings):
