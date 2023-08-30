@@ -1,6 +1,6 @@
 # Reliability Gaps Between Groups in COMPAS Dataset
 
-This repository is the official implementation of [Reliability Gaps Between Groups in COMPAS Dataset](https://arxiv.org/abs/...) by Tim Räz. It explores the question whether there are interrater reliability gaps between socially salient groups on the COMPAS dataset. The main finding is that there are such gaps, but they depend on the kind of reliability statistic that is employed.
+This repository is the official implementation of [Reliability Gaps Between Groups in COMPAS Dataset](http://arxiv.org/abs/2308.15243) by Tim Räz. It explores the question whether there are interrater reliability gaps between socially salient groups on the COMPAS dataset. The main finding is that there are such gaps, but they depend on the kind of reliability statistic that is employed.
 
 ## Requirements
 
